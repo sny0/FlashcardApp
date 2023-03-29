@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_subActivityBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onBackToMainActivityButtonClick"
+            android:text="@string/bt_back"/>
+
+        <Button
+            android:id="@+id/bt_confirmationTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onConfirmationTestButtonClick"
+            android:enabled="false"
+            android:text="確認テスト"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onStatisticButtonClick"
+            android:text="正答率＆苦手テスト"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_newCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onNewCardButtonClick"
+            android:text="@string/bt_newCard"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onDeleteThemeButtonClick"
+            android:text="テーマを消去"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onUpdateThemeButtonClick"
+            android:text="テーマを変更"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvCard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.6" />
+
+</LinearLayout>

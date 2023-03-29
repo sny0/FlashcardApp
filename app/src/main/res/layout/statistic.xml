@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onBackToCardsFromStatisticButtonClick"
+        android:text="戻る"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="苦手テスト" />
+
+        <Button
+            android:id="@+id/bt_70"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="on70TestButtonClicked"
+            android:enabled="false"
+            android:text="70%以下"/>
+
+        <Button
+            android:id="@+id/bt_50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="on50TestButtonClicked"
+            android:enabled="false"
+            android:text="50%以下"/>
+
+        <Button
+            android:id="@+id/bt_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="on30TestButtonClicked"
+            android:enabled="false"
+            android:text="30%以下"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="正答率100～71%"/>
+
+    <ListView
+        android:id="@+id/lv_correctRateHigh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.6" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="正答率70～51%"/>
+
+    <ListView
+        android:id="@+id/lv_correctRateMiddle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.6" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="正答率50～31%"/>
+
+    <ListView
+        android:id="@+id/lv_correctRateLow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.6" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="正答率30～0%"/>
+
+    <ListView
+        android:id="@+id/lv_correctRateBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.6" />
+
+
+</LinearLayout>

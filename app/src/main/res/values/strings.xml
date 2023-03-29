@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">y3033112saisyukadai</string>
+    <string-array name="lv_theme">
+        <item>テーマ1</item>
+        <item>テーマ2</item>
+        <item>テーマ3</item>
+        <item>テーマ4</item>
+        <item>テーマ5</item>
+        <item>テーマ6</item>
+        <item>テーマ7</item>
+        <item>テーマ8</item>
+        <item>テーマ9</item>
+        <item>テーマ10</item>
+    </string-array>
+    <string name="bt_newTheme">テーマをつくる</string>
+    <string name="bt_update">更新</string>
+    <string name="tv_newTheme">新しいテーマ名を入力してください</string>
+    <string name="bt_create">作成</string>
+    <string name="bt_back">戻る</string>
+    <string name="bt_newCard">カードをつくる</string>
+    <string name="tv_newWord">覚えたい単語を入力してください</string>
+    <string name="tv_newMeaning">意味を入力してください</string>
+    <string name="tv_newNote">メモを入力してください</string>
+</resources>
